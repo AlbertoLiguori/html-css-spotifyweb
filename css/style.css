@@ -1,0 +1,24 @@
+/* MEDIA QUERIES */
+@media screen and (max-width: 991px){
+
+  .display-none-xs {
+		display: none;
+	}
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+
+  .display-none-md {
+		display: none;
+	}
+
+}
+
+@media screen and (min-width: 1200px){
+
+  .display-none-lg {
+		display: none;
+	}
+
+}
