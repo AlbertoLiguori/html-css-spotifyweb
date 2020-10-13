@@ -1,0 +1,28 @@
+*{margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.container{
+  width:80%;
+  margin:auto;
+}
+
+.flex-row{
+  width:100%;
+  display: flex;
+  border:0.5px solid red;
+}
+
+.flex-column{
+  flex:1;
+  border:0.5px solid black;
+
+}
+
+/* Media Queries */
+/* @media screen and (min-width: 600px) {
+
+  .row{
+      flex-direction: row;
+    } */
