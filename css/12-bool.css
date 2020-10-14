@@ -29,7 +29,7 @@
 
 .flex-row-60{
   width:60%;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   display:flex;
 }
@@ -41,6 +41,7 @@
 }
 
 .flex-column{
+  border:1px solid white;
   flex:1;
 }
 

@@ -241,13 +241,15 @@ nav {
 }
 
 nav ul{
-  text-align: center;
+  border:1px solid violet;
+  justify-content: space-around;
   list-style: none;
   flex-wrap: wrap;
 
 }
 
 nav ul li{
+    justify-content: space-around;
     margin-right: 15px;
 }
 
@@ -269,6 +271,16 @@ height:calc(100vh - 96px);
   margin-right: auto;
 }
 
+.recently-section h2,
+.created-for-section h2,
+.popular h2,
+.recently-section > h4,
+.created-for-section > h4,
+.popular > h4{
+  padding-left: 10px;
+
+}
+
 .recently-section ul,
 .created-for-section ul,
 .popular ul {
@@ -283,14 +295,23 @@ height:calc(100vh - 96px);
   display:flex;
   flex-direction: column;
   align-items:center;
-  margin-right: 20px;
+  padding-right:10px;
+  padding-left:10px;
+  width:calc(100%  / 6);
+  min-width:200px;
+  flex-wrap: wrap;
+
 }
 
 .recently-section ul li img,
 .created-for-section ul li img,
 .popular ul li img{
-  width:190px;
+  width:100%;
+
+
 }
+
+
 
 /* PLAY BAR */
 .play-bar{
