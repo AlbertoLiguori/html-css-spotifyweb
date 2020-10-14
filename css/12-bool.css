@@ -12,6 +12,28 @@
 }
 
 /* FLEX TOOLS */
+
+.flex-row-40{
+  width:40%;
+  justify-content: space-between;
+  align-items: center;
+  display:flex;
+}
+
+.flex-row-50{
+  width:50%;
+  justify-content: space-between;
+  align-items: center;
+  display:flex;
+}
+
+.flex-row-60{
+  width:60%;
+  justify-content: space-between;
+  align-items: center;
+  display:flex;
+}
+
 .flex-row{
   width:100%;
   display: flex;
@@ -20,8 +42,55 @@
 
 .flex-column{
   flex:1;
-  border:0.5px solid green;
 }
+
+.flex-column-2{
+  flex:2;
+}
+
+.flex-column-3{
+  flex:3;
+}
+
+.flex-column-4{
+  flex:4;
+}
+
+.flex-column-5{
+  flex:5;
+}
+
+.flex-column-6{
+  flex:6;
+}
+
+.flex-column-7{
+  flex:7;
+}
+
+.flex-column-8{
+  flex:8;
+}
+
+.flex-column-9{
+  flex:9;
+}
+
+.flex-column-10{
+  flex:10;
+}
+
+.flex-column-11{
+  flex:11;
+}
+
+/* .flex-align-left{
+  justify-content:flex-start;
+}
+
+.flex-align-right{
+  justify-content:flex-end;
+} */
 
 /* GRID TOOLS */
 .row{
