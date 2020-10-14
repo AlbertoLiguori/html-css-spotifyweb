@@ -49,10 +49,6 @@ h6{
   line-height: 16px;
 }
 
-/* .color-grey{
-  color:#6E6E6E;
-} */
-
 /* ITEMS */
 .add-playlist{
   height: 50px;
@@ -99,6 +95,7 @@ h6{
   border-radius: 6px;
 }
 
+
 /* BACKGROUNDS */
 
 .BG_black{
@@ -115,6 +112,41 @@ h6{
 
 .BG_gray{
   background-color: #282828;
+}
+
+/* LEFT-NAV LIST:HOVER */
+.left-nav h4:hover,
+.left-nav ul li:hover{
+  color:lightgray;
+}
+
+/* MAIN-NAV LIST:HOVER */
+
+nav ul li:hover{
+  color:lightgray;
+}
+
+/* IMG:HOVER PLAY  */
+.img-cont{
+  position:relative;
+}
+
+.hidden{
+  color: lightgray;
+  display:none;
+  position:absolute;
+  z-index:5;
+  top:50%;
+  left:50%;
+  transform:translate(-50% , -50%);
+}
+
+main ul li:hover i{
+  display: block;
+}
+
+main ul li:hover img{
+  opacity: 0.5;
 }
 
 /* LEFT NAV  */
@@ -229,6 +261,11 @@ width:210px;
   margin:bottom:29px;
   float: right;
   margin-right: 20px;
+  transition:transform 0.5s;
+}
+
+.top-bar button:hover{
+  transform: scale(1.2);
 }
 
 /* MAIN-NAV */
@@ -307,8 +344,10 @@ height:calc(100vh - 96px);
 .created-for-section ul li img,
 .popular ul li img{
   width:100%;
+}
 
-
+.popular ul li img{
+  border-radius: 50%;
 }
 
 
