@@ -7,11 +7,12 @@
 /* FONT */
 body{
   font-family: 'Lato', sans-serif;
-  color:white;
+  color:#6E6E6E;
 }
 
 /* titoli sezioni */
 h2{
+  color:white;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -21,14 +22,15 @@ h2{
 .central-nav-font{}
 
 /* titoli canzoni */
-h3{
+h3, .h3-boldness{
+  color:white;
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
 }
 
 /* nome playlist e sottotitolo canzoni*/
-h4{
+h4, .h4-boldness {
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
@@ -36,10 +38,20 @@ h4{
 
 /* scritte piccole e grige */
 h5{
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 16px;
 }
+
+h6{
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+/* .color-grey{
+  color:#6E6E6E;
+} */
 
 /* ITEMS */
 .add-playlist{
@@ -48,6 +60,42 @@ h5{
   background-color: grey;
   border: 1px solid gray;
 }
+
+.circle{
+  height:30px;
+  width:30px;
+  background-color: gray;
+  border-radius:50%;
+}
+
+.dividiv{
+  border:1px solid white;
+  height:1px;
+  width:100%;
+}
+
+.song-bar{
+  width:500px;
+  height:4px;
+  background-color:#6E6E6E;
+  border-radius: 6px;
+}
+
+.progress-bar{
+  height:100%;
+  width:15%;
+  background-color:lightgray;
+  border-radius: 6px;
+}
+
+.volume-bar{
+  width:200px;
+  height:4px;
+  background-color:#6E6E6E;
+  border-radius: 6px;
+}
+
+
 
 /* BACKGROUNDS */
 
@@ -63,60 +111,86 @@ h5{
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* NAV COLUMN SECTION */
+.BG_gray{
+  background-color: #282828;
+}
 
-/* COLUMN NAV  */
-.nav-column-section{
-  color:white;
+/* LEFT NAV  */
+aside{
+  height:calc(100vh - 96px);
+}
+
+aside ul{
+  list-style: none;
+}
+
+.left-nav{
   float: left;
-  height:100vh;
   width:250px;
 }
 
-.content-nav-container{
+.left-nav-container{
   padding-left:20px;
   padding-right:20px;
+
 }
 
-.nav-column-section-logo img{
+/* LEFT-NAV LOGO */
+.left-nav-logo img{
 height:50px;
 margin-top:25px;
 margin-bottom: 25px;
 }
 
-aside ul{
-  list-style: none;
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.nav-column-section-header ul li{
+/* LEFT-NAV HEADER */
+.left-nav-header ul li{
   display:flex;
   align-items: center;
   margin-bottom: 10px;
 }
 
-.nav-column-section-header img{
+.left-nav-header img{
   height:30px;
   margin-right: 10px;
 }
 
-.nav-column-section-main{
+/* LEFT_NAV MAIN */
+.left-nav-main{
   margin-top: 20px;
+  overflow:hidden;
 }
 
-.nav-column-section-main ul li{
+.left-nav-main ul li{
   margin-top:20px;
 }
-.nav-column-section-main ul li:first-child{
+
+.left-nav-main ul li:first-child{
   display: flex;
   align-items: center;
 }
 
-.nav-column-section-main ul button{
+.left-nav-main ul button{
   margin-right: 10px;
 }
 
+/* LEFT-NAV FOOTER */
+.left-nav-footer{
+position:absolute;
+bottom:0;
+width:210px;
+}
+
+.left-nav-footer .profile{
+  align-items: center;
+}
+
+.left-nav-footer .download-app{
+  align-items: center;
+}
+
+.left-nav-footer .download-app img{
+  height:15px;
+}
 
 /* MAIN */
 .main-container{
@@ -126,12 +200,17 @@ aside ul{
 /* MAIN SECTION */
 .main-section{
   float:left;
-  height:100%;
+  height:calc(100vh - 96px);
   width:calc(100% - 250px);
 }
+
 /* TOP-BAR */
 .top-bar{
   height:100px;
+  width:calc(100% - 250px);
+  position: fixed;
+  top: 0;
+  right:0;
 }
 
 .top-bar button{
@@ -152,7 +231,7 @@ aside ul{
 
 /* MAIN-NAV */
 nav {
-
+  margin-top: 100px;
   justify-content:center;
   font-size: 12px;
   font-weight: 700;
@@ -170,8 +249,12 @@ nav ul li{
     margin-right: 15px;
 }
 
-
 /*SECTIONS */
+.main-container{
+overflow: hidden;
+overflow-y: scroll;
+height:calc(100vh - 96px);
+}
 
 .main-container > section{
   margin-top: 50px;
@@ -180,7 +263,6 @@ nav ul li{
 .recently-section,
 .created-for-section,
 .popular{
-  color:white;
   margin-left: auto;
   margin-right: auto;
 }
@@ -208,12 +290,61 @@ nav ul li{
   width:190px;
 }
 
+/* PLAY BAR */
+.play-bar{
+  width:100%;
+  position:fixed;
+  height:100px;
+}
+
+.play-bar-container{
+  
+  padding:10px;
+}
+
+
+.play-bar-left{
+  align-items: center;
+}
+
+.play-bar-left img{
+  height:60px;
+  width:60px;
+}
+
+.play-bar-center-bottom,
+.play-bar-center-top{
+  height:50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-bar-right{
+  align-items: center;
+  justify-content: flex-end;
+}
 
 /* Helper */
+.emc2{
+  position:relative;
+}
+
+.mr-10{
+  margin-right: 10px;
+}
+
+.mt-10{
+  margin-top: 10px;
+}
+
+.mb-10{
+  margin-bottom: 10px;
+}
 
 .border{
   border:1px solid pink;
 }
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 991px){
 
