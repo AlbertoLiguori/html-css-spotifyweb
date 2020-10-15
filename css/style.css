@@ -230,7 +230,6 @@ margin-bottom: 25px;
 /* LEFT_NAV MAIN */
 .left-nav-main{
   margin-top: 20px;
-  border:2px solid white;
 }
 
 .left-nav-main h4:first-child{
@@ -245,9 +244,7 @@ margin-bottom: 25px;
 
 .nav-ul-cont{
   height:calc(100vh - 500px);
-  border:2px solid green;
   overflow:auto;
-
 }
 
 .left-nav-main ul button{
@@ -278,7 +275,6 @@ padding-top: 15px;
 
 /* LEFT-NAV-XS */
 .left-nav-xs{
-  border:1px solid red;
   display:none;
   float:left;
   width:75px;
@@ -315,7 +311,6 @@ padding-top: 15px;
   bottom:100px;
 }
 
-
 /* MAIN */
 .main-container{
   padding:20px;
@@ -347,7 +342,6 @@ nav {
 }
 
 nav ul{
-  border:1px solid violet;
   justify-content: space-around;
   list-style: none;
   flex-wrap: wrap;
@@ -359,7 +353,7 @@ nav ul li{
     margin-right: 15px;
 }
 
-/*SECTIONS */
+/* MAIN CONTAINER */
 .main-container{
 overflow: hidden;
 overflow-y: scroll;
@@ -367,6 +361,7 @@ height:calc(100vh - 96px);
 min-width: 450px;
 }
 
+/*SECTIONS */
 .main-container > section{
   margin-top: 50px;
 }
@@ -415,7 +410,6 @@ min-width: 450px;
   width:calc(100%  / 6);
   min-width:150px;
   min-height: 275px;
-
 }
 
 .recently-section ul li img,
@@ -562,7 +556,6 @@ min-width: 450px;
   .created-for-section ul li,
   .popular ul li{
     width:calc(100%  / 4);
-
   }
 
 }

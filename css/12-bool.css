@@ -37,11 +37,9 @@
 .flex-row{
   width:100%;
   display: flex;
-  border:0.5px solid red;
 }
 
 .flex-column{
-  border:1px solid white;
   flex:1;
 }
 
@@ -107,7 +105,7 @@
 
 /* Debug */
 .debug [class*="col-"]{
-  border:0.5px solid black;
+  /* border:0.5px solid black; */
   min-height: 100px;
 }
 
