@@ -259,7 +259,7 @@ padding-top: 15px;
   border:1px solid red;
   display:none;
   float:left;
-  width:100px;
+  width:75px;
   height:calc(100vh - 96px);
 }
 
@@ -359,6 +359,7 @@ nav ul li{
 overflow: hidden;
 overflow-y: scroll;
 height:calc(100vh - 96px);
+min-width: 450px;
 }
 
 .main-container > section{
@@ -428,6 +429,7 @@ height:calc(100vh - 96px);
   justify-content: space-between;
 }
 
+/* LEFT PLAYBAR */
 .play-bar-left h5{
   color:white;
 }
@@ -444,6 +446,14 @@ height:calc(100vh - 96px);
   width:60px;
 }
 
+.play-bar-left .ico-container{
+  display: flex;
+  min-width:50px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* CENTER PLAYBAR */
 .play-bar-center{
   width:40%;
   min-width:260px;
@@ -466,6 +476,8 @@ height:calc(100vh - 96px);
   justify-content: center;
 }
 
+
+/* RIGHT PLAYBAR */
 .play-bar-right{
   width:200px;
   align-items: center;
@@ -503,22 +515,42 @@ height:calc(100vh - 96px);
 
 .main-section,
 .top-bar{
-  width:calc(100% - 100px);
+  width:calc(100% - 75px);
 }
 
 .left-nav-xs{
   display:block;
 }
 
+.play-bar-left .ico-container{
+  flex-direction: column;
+}
+
+.recently-section ul li,
+.created-for-section ul li,
+.popular ul li{
+  width:calc(100%  / 2);
+}
+
 }
 
 @media screen and (min-width:769) and (max-width: 991px){
 
-
+  .recently-section ul li,
+  .created-for-section ul li,
+  .popular ul li{
+    width:calc(100%  / 3);
+  }
 
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px){
+  .recently-section ul li,
+  .created-for-section ul li,
+  .popular ul li{
+    width:calc(100%  / 4);
+
+  }
 
 
 
