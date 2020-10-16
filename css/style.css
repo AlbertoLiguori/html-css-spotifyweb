@@ -1,16 +1,10 @@
-.clear-fix::after{
-  content:"";
-  display: table;
-  clear:both;
-}
-
 /* FONT */
 body{
   font-family: 'Lato', sans-serif;
   color:#6E6E6E;
 }
 
-/* titoli sezioni */
+/* titoli-sezioni*/
 h2{
   color:white;
   font-size: 24px;
@@ -18,10 +12,7 @@ h2{
   line-height: 28px;
 }
 
-/* titoli central nav */
-.central-nav-font{}
-
-/* titoli canzoni */
+/* titoli-brani */
 h3, .h3-boldness{
   color:white;
   font-size: 16px;
@@ -29,14 +20,14 @@ h3, .h3-boldness{
   line-height: 24px;
 }
 
-/* nome playlist e sottotitolo canzoni*/
+/* nome playlist & autori*/
 h4, .h4-boldness {
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
 }
 
-/* scritte piccole e grige */
+/* testi H&T*/
 h5{
   font-size: 14px;
   font-weight: 400;
@@ -104,6 +95,19 @@ h6{
   border-radius: 6px;
 }
 
+.scrubber{
+  width:12px;
+  height:12px;
+  border-radius: 50%;
+  background-color: white;
+  border:1px solid white;
+  position:absolute;
+  top:50%;
+  left:13%;
+  transform:translateY(-50%);
+  display:none;
+}
+
 .volume-bar{
   position: relative;
   width:50%;
@@ -113,7 +117,6 @@ h6{
 }
 
 /* BACKGROUNDS */
-
 .BG_black{
   background-color: black;
 }
@@ -129,6 +132,22 @@ h6{
 
 .BG_gray{
   background-color: #282828;
+}
+
+/* PLAYBAR:HOVER */
+.play-bar-center-bottom:hover .scrubber{
+  display:block;
+}
+.play-bar-center:hover .progress-bar{
+  background-color: lightgreen;
+}
+/* VOLUME:HOVER */
+.volume-bar:hover .scrubber{
+  display:block;
+}
+
+.volume-bar:hover .progress-bar{
+  background-color: lightgreen;
 }
 
 /* LEFT-NAV CREATE-LIST:HOVER */
@@ -248,12 +267,8 @@ margin-bottom: 25px;
 }
 
 .nav-ul-cont{
-  height:calc(100vh - 500px);
+  height:calc(100vh - 515px);
   overflow:auto;
-}
-
-.left-nav-main ul button{
-  margin-right: 10px;
 }
 
 /* LEFT-NAV FOOTER */
@@ -355,7 +370,6 @@ nav ul{
   justify-content: space-around;
   list-style: none;
   flex-wrap: wrap;
-
 }
 
 nav ul li{
@@ -432,8 +446,6 @@ min-width: 450px;
   border-radius: 50%;
 }
 
-
-
 /* PLAY BAR */
 .play-bar{
   width:100%;
@@ -493,7 +505,6 @@ min-width: 450px;
   justify-content: center;
 }
 
-
 /* RIGHT PLAYBAR */
 .play-bar-right{
   width:200px;
@@ -502,32 +513,15 @@ min-width: 450px;
   align-content: flex-end;
 }
 
-/* Helper */
-.emc2{
-  position:relative;
-}
-
-.mr-10{
-  margin-right: 10px;
-}
-
-.mt-10{
-  margin-top: 10px;
-}
-
-.mb-10{
-  margin-bottom: 10px;
-}
-
-.border{
-  border:1px solid pink;
-}
-
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 768px){
   .left-nav{
     display:none;
+  }
+
+  .main-section{
+    overflow-x: hidden;
   }
 
   .main-section,
@@ -567,10 +561,5 @@ min-width: 450px;
   .popular ul li{
     width:calc(100%  / 4);
   }
-
-}
-
-@media screen and (min-width: 1200px){
-
 
 }
