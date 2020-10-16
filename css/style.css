@@ -149,6 +149,11 @@ h6{
   color:lightgray;
 }
 
+.left-nav-xs ul li img:hover,
+.left-nav-xs .dl-img:hover{
+  opacity:1;
+}
+
 /* TOP-BAR:HOVER */
 .top-bar button:hover{
   transform: scale(1.2);
@@ -303,6 +308,11 @@ padding-top: 15px;
   width:30px;
   height:30px;
   margin-bottom: 10px;
+}
+
+.left-nav-xs ul li img,
+.left-nav-xs .dl-img{
+  opacity:0.5;
 }
 
 /* LEFT-NAV-XS FOOTER */
