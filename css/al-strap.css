@@ -1,0 +1,124 @@
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* HELPER */
+
+.emc2{
+  position:relative;
+}
+
+.mr-10{
+  margin-right: 10px;
+}
+
+.ml-10{
+  margin-left: 10px;
+}
+
+.mt-10{
+  margin-top: 10px;
+}
+
+.mb-10{
+  margin-bottom: 10px;
+}
+
+.border{
+  border:1px solid pink;
+}
+
+
+/* CONTAINERS */
+.container{
+  width:100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* FLEX TOOLS */
+
+.flex-row-40{
+  width:40%;
+  justify-content: space-between;
+  align-items: center;
+  display:flex;
+}
+
+.flex-row-50{
+  width:50%;
+  justify-content: space-between;
+  align-items: center;
+  display:flex;
+}
+
+.flex-row-60{
+  width:60%;
+  justify-content: space-around;
+  align-items: center;
+  display:flex;
+}
+
+.flex-row{
+  width:100%;
+  display: flex;
+}
+
+.flex-column{
+  flex:1;
+}
+
+.flex-column-2{
+  flex:2;
+}
+
+.flex-column-3{
+  flex:3;
+}
+
+.flex-column-4{
+  flex:4;
+}
+
+.flex-column-5{
+  flex:5;
+}
+
+.flex-column-6{
+  flex:6;
+}
+
+.flex-column-7{
+  flex:7;
+}
+
+.flex-column-8{
+  flex:8;
+}
+
+.flex-column-9{
+  flex:9;
+}
+
+.flex-column-10{
+  flex:10;
+}
+
+.flex-column-11{
+  flex:11;
+}
+
+/* GRID TOOLS */
+.row{
+  width:100%;
+}
+
+/* CLEARFIX */
+.row::after{
+  content:"";
+  display: table;
+  clear:both;
+}
